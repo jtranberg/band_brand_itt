@@ -47,7 +47,6 @@ const PromptInput = () => {
       <input
         type="text"
         value={prompt}
-       
         onChange={handleChange}
         placeholder="Enter your prompt"
         style={{ height: prompt.length > 0 ? 'auto' : 'initial' }} // Expand the height based on content
@@ -66,7 +65,7 @@ const PromptInput = () => {
 export default PromptInput;
 
 async function fetchImageFromModel(prompt) {
-  const apiKey = 'key-1GD6Y6KQ6gHUUPkXKLkTYqBD9GgJe9L5F6cmD5mDEri6sXVlrWepyxmvyQhDssaDfso5tL6rrepR9Eblcm6WAGnFMuKijCEu'; // Your API key
+  const apiKey = process.env.REACT_APP_API_KEY; // Now using the environment variable
   const options = {
     method: 'POST',
     headers: {
