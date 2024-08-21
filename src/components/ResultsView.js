@@ -22,7 +22,7 @@ const ResultsView = () => {
           <div key={index}>{result}</div>
         ))
       ) : (
-        <div class="text"><p id="text">
+        <div className="text"><p id="text">
           Waiting for your prompt<br />
           This will be exciting.<br />
           Please be patient while I build your prompt.
