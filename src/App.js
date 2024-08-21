@@ -5,7 +5,7 @@ import ResultsView from './components/ResultsView'; // This should work correctl
 function App() {
   return (
     <div className="App">
-      <h1 class="title">Band Brand title</h1>
+      <h1 class="title">Band Brand TTI</h1>
       <ResultsView />
       <PromptInput />
       
